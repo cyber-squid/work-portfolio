@@ -8,10 +8,23 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+p {
+    font-family: Tahoma;
+}
+
 #banner {
     background-color: white;
     margin: -0.55%;
-    padding: 1% 1.5%;
+    padding: 0.2% 2%;
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 2%;
+}
+
+#title-in-banner{
+    margin-right:auto; /*force margin on the right to match the container's instead of aligning with the rest of the flexbox. i guess.*/
 }
 
 #about-me-div {
@@ -32,12 +45,45 @@ h1 {
     line-height:1.35;
 }
 
+#games-section {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 9%;
+    max-width: 80%;
+}
+
+.game-display-box {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 22%;
+    margin-top: 6%;
+    padding: 1vw;
+    flex-shrink: 0;
+}
+
 .game-thumbnail {
-    max-width: 20%;
-    max-height: 20%;
+    background-color: white;
+    border-radius: 20px;
+
+    max-width: 80%;
+    max-height: 80%;
     min-width: 10%;
     min-height: 10%;
-    flex-shrink:0.5;
+    flex-shrink: 0.2;
+
+    display: block;
+    margin: auto;
+}
+
+.game-name{
+    text-align: center;
+    font-family:Tahoma;
 }
 
 
